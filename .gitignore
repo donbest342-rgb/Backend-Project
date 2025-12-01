@@ -1,0 +1,7 @@
+node_modules
+
+env
+
+password:= cxJX40HUZW3p828P
+user name: = amaechidivine348_db_user
+another: = mongodb+srv://amaechidivine348_db_user:cxJX40HUZW3p828P@cluster0.0uvsyzu.mongodb.net/
