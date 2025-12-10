@@ -2,6 +2,7 @@ import dotenv from 'dotenv'
 import express from 'express'
 import { mongoose } from 'mongoose';
 import userRoute from './route/user.js'
+import productRouter from './route/product.js';
 
 
 const app = express()
@@ -14,6 +15,9 @@ app.listen(5000, () => {
 
 
 app.use('/api/users', userRoute)
+app.use('/api/products', productRouter)
+
+
 app.get('/', (req, res)=>{
     res.send('hellow Don')
 })
