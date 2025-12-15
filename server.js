@@ -3,11 +3,13 @@ import express from 'express'
 import { mongoose } from 'mongoose';
 import userRoute from './route/user.js'
 import productRouter from './route/product.js';
+import cors from 'cors';
 
 
 const app = express()
-app.use(express.json());  
+app.use(cors());  
 dotenv.config();
+
 
 app.listen(5000, () => {
     console.log(`backend is currently running on port ${process.env.PORT}`)
